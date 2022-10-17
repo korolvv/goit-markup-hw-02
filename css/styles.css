@@ -8,7 +8,6 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 	color: var(--main-color);
 	font-family: "Roboto", sans-serif;
 }
@@ -29,14 +28,22 @@ a {
 	text-decoration: none;
 }
 
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
 /* -------------- Header -------------- */
 
 header {
+	border-bottom: 1px solid #ececec;
+}
+
+header .container {
 	height: 80px;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-	padding: 0 215px;
 }
 
 .logo-nav {
@@ -62,11 +69,14 @@ header {
 	display: flex;
 }
 
+.logo-nav li {
+	margin-right: 50px;
+}
+
 .logo-nav li a {
 	font-weight: 500;
 	font-size: 14px;
 	cursor: pointer;
-	margin-right: 50px;
 }
 
 .logo-nav li a:hover,
@@ -146,13 +156,14 @@ header {
 
 /* -------------- Description -------------- */
 
-.description {
-	padding: 94px 215px;
+.section {
+	padding: 94px 0;
 }
 
 .description ul {
 	display: flex;
 	justify-content: space-between;
+	column-gap: 30px;
 }
 
 .description h4 {
@@ -174,7 +185,7 @@ header {
 /* -------------- tasks -------------- */
 
 .tasks {
-	padding: 0 215px 94px;
+	padding-bottom: 94px;
 }
 
 .tasks ul {
@@ -191,7 +202,6 @@ header {
 /* -------------- Team -------------- */
 
 .team {
-	padding: 94px 215px;
 	background-color: #f5f4fa;
 }
 
@@ -242,7 +252,7 @@ header {
 /* -------------- Footer -------------- */
 
 footer {
-	padding: 60px 215px;
+	padding: 60px 0;
 	width: 100%;
 	background-color: #2f303a;
 }
@@ -281,8 +291,7 @@ footer a {
 /* ----------------- Portfolio ----------------- */
 
 .portfolio {
-	padding: 94px 215px;
-	border-top: 1px solid #ececec;
+	padding: 94px 0;
 }
 
 .portfolio-filter {
@@ -329,7 +338,6 @@ footer a {
 
 .projects img {
 	width: 370px;
-	height: 294px;
 	display: block;
 }
 
