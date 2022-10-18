@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,12 +22,16 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="email-tel">
-					<a class="email" href="mailto:info@devstudio.com"
-						>info@devstudio.com</a
-					>
-					<a class="tel" href="tel:+380961111111">+38 096 111 11 11</a>
-				</div>
+				<ul class="email-tel">
+					<li>
+						<a class="email" href="mailto:info@devstudio.com"
+							>info@devstudio.com</a
+						>
+					</li>
+					<li>
+						<a class="tel" href="tel:+380961111111">+38 096 111 11 11</a>
+					</li>
+				</ul>
 			</div>
 		</header>
 		<main class="portfolio">
@@ -39,11 +43,11 @@
 					<li tabindex="0"><button type="button">Дизайн</button></li>
 					<li tabindex="0"><button type="button">Маркетинг</button></li>
 				</ul>
-				<ul class="projects">
+				<ul class="portfolio-wrapper">
 					<li>
 						<article tabindex="0">
 							<img src="images/portfolio/img1.jpg" alt="Технокряк" />
-							<div class="projects__descr">
+							<div class="portfolio-wrapper-descr">
 								<h4>Технокряк</h4>
 								<p>Веб-сайт</p>
 							</div>
@@ -55,7 +59,7 @@
 								src="images/portfolio/img2.jpg"
 								alt="Постер баскетбольного матчу"
 							/>
-							<div class="projects__descr">
+							<div class="portfolio-wrapper-descr">
 								<h4>Постер New Orlean vs Golden Star</h4>
 								<p>Дизайн</p>
 							</div>
@@ -64,7 +68,7 @@
 					<li>
 						<article tabindex="0">
 							<img src="images/portfolio/img3.jpg" alt="Постер" />
-							<div class="projects__descr">
+							<div class="portfolio-wrapper-descr">
 								<h4>Ресторан Seafood</h4>
 								<p>Додаток</p>
 							</div>
@@ -73,7 +77,7 @@
 					<li>
 						<article tabindex="0">
 							<img src="images/portfolio/img4.jpg" alt="Навушники" />
-							<div class="projects__descr">
+							<div class="portfolio-wrapper-descr">
 								<h4>Проєкт Prime</h4>
 								<p>Маркетинг</p>
 							</div>
@@ -85,7 +89,7 @@
 								src="images/portfolio/img5.jpg"
 								alt="Картонні бокси"
 							/>
-							<div class="projects__descr">
+							<div class="portfolio-wrapper-descr">
 								<h4>Проєкт Boxes</h4>
 								<p>Додаток</p>
 							</div>
@@ -94,7 +98,7 @@
 					<li>
 						<article tabindex="0">
 							<img src="images/portfolio/img6.jpg" alt="Постер сайту" />
-							<div class="projects__descr">
+							<div class="portfolio-wrapper-descr">
 								<h4>Inspiration has no Borders</h4>
 								<p>Веб-сайт</p>
 							</div>
@@ -103,7 +107,7 @@
 					<li>
 						<article tabindex="0">
 							<img src="images/portfolio/img7.jpg" alt="Книга" />
-							<div class="projects__descr">
+							<div class="portfolio-wrapper-descr">
 								<h4>Видання Limited Edition</h4>
 								<p>Дизайн</p>
 							</div>
@@ -112,7 +116,7 @@
 					<li>
 						<article tabindex="0">
 							<img src="images/portfolio/img8.jpg" alt="Етикетка" />
-							<div class="projects__descr">
+							<div class="portfolio-wrapper-descr">
 								<h4>Проєкт LAB</h4>
 								<p>Маркетинг</p>
 							</div>
@@ -124,7 +128,7 @@
 								src="images/portfolio/img9.jpg"
 								alt="Постер веб-додатку"
 							/>
-							<div class="projects__descr">
+							<div class="portfolio-wrapper-descr">
 								<h4>Growing Business</h4>
 								<p>Додаток</p>
 							</div>
@@ -133,17 +137,28 @@
 				</ul>
 			</div>
 		</main>
-		<footer id="contacts">
+		<footer id="contants">
 			<div class="container">
+				<a href="#" tabindex="0" class="main-logo"
+					><span>Web</span>Studio</a
+				>
 				<address>
-					<a href="#" tabindex="0" class="main-logo"
-						><span>Web</span>Studio</a
-					>
 					<p tabindex="0">м. Київ, пр-т Лесі Українки, 26</p>
-					<a class="email footer__email" href="mailto:info@devstudio.com"
-						>info@devstudio.com</a
-					>
-					<a class="tel" href="tel:+380961111111">+38 096 111 11 11</a>
+					<ul>
+						<li>
+							<a
+								class="email footer__email"
+								href="mailto:info@devstudio.com"
+							>
+								info@devstudio.com
+							</a>
+						</li>
+						<li>
+							<a class="tel" href="tel:+380961111111">
+								+38 096 111 11 11
+							</a>
+						</li>
+					</ul>
 				</address>
 			</div>
 		</footer>
