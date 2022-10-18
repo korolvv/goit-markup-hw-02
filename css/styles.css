@@ -101,6 +101,8 @@ header .container {
 	font-weight: 500;
 	font-size: 14px;
 	color: #757575;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
 }
 
 .email:hover,
@@ -166,7 +168,7 @@ header .container {
 	column-gap: 30px;
 }
 
-.description h4 {
+.description h3 {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
@@ -182,19 +184,19 @@ header .container {
 	color: #757575;
 }
 
-/* -------------- tasks -------------- */
+/* -------------- projects -------------- */
 
-.tasks {
+.projects {
 	padding-bottom: 94px;
 }
 
-.tasks ul {
+.projects ul {
 	margin-top: 50px;
 	display: flex;
 	justify-content: space-between;
 }
 
-.tasks img {
+.projects img {
 	max-width: 370px;
 	width: 100%;
 }
@@ -211,7 +213,7 @@ header .container {
 	justify-content: space-between;
 }
 
-.team figure {
+.team li {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -221,14 +223,13 @@ header .container {
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
-	padding-bottom: 30px;
 }
 
-.team figure img {
+.team li img {
 	height: 260px;
 }
 
-.team figcaption {
+.team h3 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -238,15 +239,18 @@ header .container {
 	line-height: 1.19;
 	letter-spacing: 0.03em;
 	color: #212121;
+	margin-top: 30px;
 }
 
-.team figcaption span {
+.team p {
 	margin-top: 10px;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
 	color: #757575;
+	text-align: center;
+	margin-bottom: 30px;
 }
 
 /* -------------- Footer -------------- */
@@ -274,14 +278,16 @@ footer p {
 	margin-bottom: 9px;
 }
 
-footer p {
-	color: #fff;
-}
-
 footer a {
 	color: rgba(255, 255, 255, 0.6);
 	display: block;
 	width: auto;
+}
+
+footer .email,
+footer .tel {
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.6);
 }
 
 .footer__email {
@@ -326,7 +332,7 @@ footer a {
 		0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.projects {
+.portfolio-wrapper {
 	margin-top: 50px;
 	display: grid;
 	justify-content: center;
@@ -336,19 +342,19 @@ footer a {
 	grid-auto-rows: 404px;
 }
 
-.projects img {
+.portfolio-wrapper img {
 	width: 370px;
 	display: block;
 }
 
-.projects__descr {
+.portfolio-wrapper-descr {
 	border-left: 1px solid #eeeeee;
 	border-right: 1px solid #eeeeee;
 	border-bottom: 1px solid #eeeeee;
 	padding: 20px 24px 19px;
 }
 
-.projects__descr h4 {
+.portfolio-wrapper-descr h4 {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
@@ -356,7 +362,7 @@ footer a {
 	margin-bottom: 4px;
 }
 
-.projects__descr p {
+.portfolio-wrapper-descr p {
 	line-height: 1.875;
 	letter-spacing: 0.03em;
 	color: #757575;
