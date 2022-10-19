@@ -273,7 +273,9 @@ header .container {
 }
 
 .team-card-item img {
-	height: 260px;
+	height: auto;
+	display: block;
+	width: 100%;
 }
 
 .team-card-item-descr {
@@ -489,7 +491,8 @@ footer .tel {
 }
 
 .portfolio-wrapper img {
-	width: 370px;
+	height: auto;
+	width: 100%;
 	display: block;
 }
 
@@ -513,4 +516,3 @@ footer .tel {
 
 	color: #757575;
 }
-
